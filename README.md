@@ -4,7 +4,7 @@
 
 Add this to your `Gemfile`:
 
-    gem "configus"
+    gem "ipgeobase"
 
 ## Examples
 
