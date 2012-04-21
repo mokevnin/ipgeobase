@@ -1,4 +1,4 @@
-require 'iconv'
+require 'iconv' unless String.new.respond_to?(:encode)
 
 module Ipgeobase
   class IpMetaData
@@ -12,16 +12,18 @@ module Ipgeobase
     element :lat, Float, :deep => true
     element :lng, Float, :deep => true
 
-    def city
-      Iconv.iconv('windows-1251', 'utf-8', @city).first
-    end
+    def city;encode(@city);end
+    def country;encode(@country);end
+    def region;encode(@region);end
 
-    def country
-      Iconv.iconv('windows-1251', 'utf-8', @country).first
-    end
+    private
 
-    def region
-      Iconv.iconv('windows-1251', 'utf-8', @region).first
+    def encode(api_string)
+      if api_string.respond_to?(:encode)
+        api_string.encode
+      else
+        Iconv.iconv('windows-1251', 'utf-8', api_string).first
+      end
     end
   end
 end
