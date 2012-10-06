@@ -2,8 +2,6 @@
 
 [![Build Status](https://travis-ci.org/mokevnin/ipgeobase.png)](https://travis-ci.org/mokevnin/ipgeobase)
 
-Simple format validators for Rails 3
-
 ## Installation
 
 Add this line to your application's Gemfile:
