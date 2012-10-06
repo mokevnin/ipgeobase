@@ -1,4 +1,5 @@
-require 'iconv' unless String.new.respond_to?(:encode)
+require 'happymapper'
+require 'iconv' unless String.instance_methods.include?(:encode)
 
 module Ipgeobase
   class IpMetaData
@@ -12,9 +13,17 @@ module Ipgeobase
     element :lat, Float, :deep => true
     element :lng, Float, :deep => true
 
-    def city;encode(@city);end
-    def country;encode(@country);end
-    def region;encode(@region);end
+    def city
+      encode(@city)
+    end
+
+    def country
+      encode(@country)
+    end
+
+    def region
+      encode(@region)
+    end
 
     private
 
