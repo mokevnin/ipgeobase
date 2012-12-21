@@ -7,3 +7,4 @@ gem 'rake'
 gem 'minitest'
 gem 'turn'
 gem 'webmock', :require => 'webmock/minitest'
+gem 'coveralls', require: false

@@ -1,6 +1,7 @@
 # Ipgeobase
 
 [![Build Status](https://travis-ci.org/mokevnin/ipgeobase.png)](https://travis-ci.org/mokevnin/ipgeobase)
+[![Coverage status](https://coveralls.io/repos/mokevnin/ipgeobase/badge.png?branch=master)](https://coveralls.io/repos/mokevnin/ipgeobase)
 
 ## Installation
 
