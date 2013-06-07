@@ -4,7 +4,6 @@ source "http://rubygems.org"
 gemspec
 
 gem 'rake'
-gem 'minitest'
-gem 'turn'
-gem 'webmock', :require => 'webmock/minitest'
+gem 'minitest', '4.7.3'
+gem 'webmock', require: 'webmock/minitest'
 gem 'coveralls', require: false

@@ -1,14 +1,12 @@
 require 'bundler/setup'
 Bundler.require
 
-#WebMock.disable_net_connect!(:allow => "www.example.org:8080")
+require "minitest/autorun"
 
-WebMock.disable_net_connect! allow: %w{coveralls.io}
-
-require 'coveralls'
-Coveralls.wear!('rails')
-
-MiniTest::Unit.autorun
+if ENV['TRAVIS']
+  require 'coveralls'
+  Coveralls.wear!
+end
 
 class TestCase < MiniTest::Unit::TestCase
   def load_fixture(filename)
