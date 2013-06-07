@@ -1,7 +1,11 @@
 # Ipgeobase
 
+[![Gem Version](https://badge.fury.io/rb/ipgeobase.png)](https://rubygems.org/gems/ipgeobase)
 [![Build Status](https://travis-ci.org/mokevnin/ipgeobase.png)](https://travis-ci.org/mokevnin/ipgeobase)
-[![Coverage status](https://coveralls.io/repos/mokevnin/ipgeobase/badge.png?branch=master)](https://coveralls.io/r/mokevnin/ipgeobase)
+[![Dependency Status](https://gemnasium.com/mokevnin/ipgeobase.png)](https://gemnasium.com/mokevnin/ipgeobase)
+[![Code Climate](https://codeclimate.com/github/mokevnin/ipgeobase.png)](https://codeclimate.com/github/mokevnin/ipgeobase)
+[![Coverage Status](https://coveralls.io/repos/mokevnin/ipgeobase/badge.png?branch=master)](https://coveralls.io/r/mokevnin/ipgeobase)
+[![Gem Version](http://stillmaintained.com/mokevnin/ipgeobase.png)](http://stillmaintained.com/mokevnin/ipgeobase)
 
 ## Installation
 
