@@ -6,6 +6,7 @@ module Ipgeobase
     include HappyMapper
 
     tag 'ip-answer'
+    element :inetnum, String, :deep => true
     element :city, String, :deep => true
     element :country, String, :deep => true
     element :region, String, :deep => true
