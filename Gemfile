@@ -4,6 +4,6 @@ source "http://rubygems.org"
 gemspec
 
 gem 'rake'
-gem 'minitest', '4.7.3'
+gem 'minitest', '> 5.0.3'
 gem 'webmock', require: 'webmock/minitest'
 gem 'coveralls', require: false

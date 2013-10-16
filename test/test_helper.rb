@@ -8,7 +8,7 @@ if ENV['TRAVIS']
   Coveralls.wear!
 end
 
-class TestCase < MiniTest::Unit::TestCase
+class TestCase < MiniTest::Test
   def load_fixture(filename)
     File.read(File.dirname(__FILE__) + "/fixtures/#{filename}")
   end
