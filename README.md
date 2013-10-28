@@ -40,3 +40,7 @@ run tests:
 
     turn -Itest test/lib
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mokevnin/ipgeobase/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
