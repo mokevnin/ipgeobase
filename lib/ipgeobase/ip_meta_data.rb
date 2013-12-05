@@ -30,9 +30,9 @@ module Ipgeobase
 
     def encode(api_string)
       if api_string.respond_to?(:encode)
-        api_string.encode
+        api_string.encode("UTF-8")
       else
-        Iconv.iconv('windows-1251', 'utf-8', api_string).first
+        Iconv.iconv('utf-8', 'windows-1251', api_string).first
       end
     end
   end
