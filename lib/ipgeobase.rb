@@ -1,5 +1,5 @@
 require 'uri'
-require 'net/http'
+require 'open-uri'
 
 module Ipgeobase
   URL = 'http://ipgeobase.ru:7020/geo'
@@ -8,7 +8,7 @@ module Ipgeobase
   def self.lookup(ip)
     uri = URI.parse(URL)
     uri.query = URI.encode_www_form :ip => ip
-
-    IpMetaData.parse(Net::HTTP.get(uri))
+    resp = open(uri).read()
+    IpMetaData.parse(resp.to_s)
   end
 end
