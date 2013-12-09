@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ip-answer>
+  <ip value="46.8.114.116">
+    <inetnum>46.8.112.0 - 46.8.127.255</inetnum>
+    <country>RU</country>
+    <city>Ульяновск</city>
+    <region>Ульяновская область</region>
+    <district>Приволжский федеральный округ</district>
+    <lat>54.321480</lat>
+    <lng>48.385651</lng>
+  </ip>
+</ip-answer>
