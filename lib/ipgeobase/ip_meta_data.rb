@@ -28,11 +28,13 @@ module Ipgeobase
 
     private
 
-    def encode(api_string)
-      if api_string.respond_to?(:encode)
-        api_string.encode("UTF-8")
+    def encode(entity)
+      return nil if entity.nil?
+
+      if entity.respond_to?(:encode)
+        entity.encode("UTF-8")
       else
-        Iconv.iconv('utf-8', 'windows-1251', api_string).first
+        Iconv.iconv('utf-8', 'windows-1251', entity).first
       end
     end
   end
